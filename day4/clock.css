@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-border {
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    border: 36px solid red;
+    box-shadow: 0 0 15px grey;
+    
+}
+
+.clock-inner {
+    height: 97%;
+    border-radius: 50%;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px grey inset;
+    margin: 2px 2px 2px 2px;
+    position: relative;
+}
+
+.first {
+    top: 60%;
+    left: 10px;
+    transform: rotate(160deg);
+    position: absolute;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.second {
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    transform: rotate(230deg);
+    width: 50%;
+    border: 2px solid black;
+}
+
+.third {
+    position: absolute;
+    top: 68%;
+    left: 24px;
+    transform: rotate(140deg);
+    width: 50%;
+    border: 2px solid black;
+}
