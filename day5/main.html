@@ -8,10 +8,12 @@
 <body>
     <div class="container">
         <div class="cal-container">
-            <div class="screen"></div>
+            <div class="screen">
+                <p id="disp">0</p>
+            </div>
             <div class="btn-container">
                 <div class="con">
-                    <div class="btn"><span class="btn-text" onclick="clear()">AC</span></div>
+                    <div class="btn"><span class="btn-text" onclick="clr()">AC</span></div>
                     <div class="btn" onclick="equals()"><span class="btn-text">=</span></div>
                     <div class="btn"><span class="btn-text"></span></div>
                     <div class="btn"><span class="btn-text" onclick="calc('+')">+</span></div>
@@ -37,38 +39,6 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" >
-    let first = "";
-    let result = "";
-    const calc = (value) => {
-        if(value == '+' || value == '-' || value == '*' || value == '/') {
-            first = result;
-            sign = value;
-            result = "";
-        }
-        else {
-            result += value;
-        }
-    }
-    const equals = () => {
-        if(sign == '+') {
-            ans = parseInt(first) + parseInt(result);
-        }
-        if(sign == '-') {
-            ans = parseInt(first) - parseInt(result);
-        }
-        if(sign == '*') {
-            ans = parseInt(first) * parseInt(result);
-        }
-        if(sign == '/') {
-            ans = parseInt(first) / parseInt(result);
-        }
-        console.log(ans);
-    }
-    const clear = () => {
-        result = 0;
-        console.log(result);
-    }
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
